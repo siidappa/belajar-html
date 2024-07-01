@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block dan Inline</title>
+</head>
+<body>
+    <!-- 
+        No 1. Block
+        ? Element yang memiliki nilai display block, selalu dimulai dengan baris baru
+        ? Element dengan nilai display block , selalu mengambil ukuran penuh yang tersedia, yang artiny dia akan meregang dari kiri sampai ke kanan
+        !! Contoh tag dengan nilai block:
+            > h1-h6             > div
+            > body              > section
+            > ul - li - ol      > nav
+            > table             > pre
+            > form              > figure
+            > p                 > tfoot
+            > header - footer   > fieldset
+            > blockquote        > main
+            > dt - dl - dd      > canvas
+            > hr                > noscript
+            > video             > address - article
+
+            No 1.2 '<div>' element
+                ? '<div>' memiliki display block
+                ? biasanya digunakan sebagai container untuk beberapa element HTML
+                ? banyak digunakan ketika kita ingin membedakan bagian-bagian dalam element contoh menu, content, footer, header dll.
+        
+        No 2. Inline 
+        ? Display 'inline' itu tidak dimulai dengan baris baru
+        ? 'inline' hanya akan menggunakan ukuran seperlunya saja
+        !! Contoh Tag dengan nilai 'inline':
+            > a                 > time
+            > b - strong        > select
+            > i - em            > cite
+            > button            > label
+            > input             > span
+            > bdo               > textarea
+            > q - small         > img
+            > sup - sub         > tt
+            > script            > output
+            > code              > object
+            > br - dfn - kbd - big
+            > map - abbr - map
+
+            No 2.1 '<span>' element
+                ? '<span>' element memiliki nilai inline
+                ? '<span>' biasa digunakan pada kasus kita ingin menggunakan display inline, contoh kita mau membuat
+                ?       tulisan Dappa Naufal Fachrezi, namu tiap kata berbeda warna
+                ? Kita bisa menggunakan span di tiap kata, agar bisa menambahkan style di tiap span
+    -->
+    
+    <!-- $ Contoh penerapan '<div>' -> block element -->
+    <div style="background-color: yellowgreen;">
+        <ul>
+            <li>Beranda</li>
+            <li>Medsos</li>
+            <li>Artikel</li>
+        </ul>
+    </div>
+    <div style="background-color: salmon;">
+        <h2>Judul Halaman</h2>
+        <p>Isi Halaman</p>
+    </div>
+
+    <!-- $ Contoh penerapan '<span>' -> inline element -->
+    <h1 style="color: salmon;"><span style="color: blue;">Daffa</span> Naufal <span style="color:yellowgreen;">Fachrezi</span></h1>
+</body>
+</html>
