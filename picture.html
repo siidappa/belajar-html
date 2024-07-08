@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture</title>
+</head>
+<body>
+    <!-- 
+        No 1. Picture
+        !! Selain untuk menampilkan gambar menggunakan tag '<img>', di HTML juga bisa menggunakan tag '<picture>'
+        ? Salah satu keuntungan menggunakan tag '<picture>' adalah kita bisa menggunakan beberapa lokasi gambar dan bisa di atur sesuai dengan ukuran layar
+            No 1.2 Picture Content
+                ? di dalam tag picture, kita bisa menambahkan tag source yang berisi lokasi gambar dan tag '<img>' sebagai default gambar ketika semua kondisi tag source tidak terpenuhi
+                ? Tag 'picture' bukan void element
+    -->
+    
+    <!-- $ Contoh penerapan -->
+    <h2>Belajar Picture</h2>
+
+    <picture>
+        <source media="(max-width: 500px)" srcset="/img/pp.jpeg">
+        <source media="(max-width: 200px)" srcset="/img/pp.jpg">
+        <img src="/img/yamada.jpeg" alt="Yamada" style="width: 250px; height: 250px;">
+    </picture>
+</body>
+</html>

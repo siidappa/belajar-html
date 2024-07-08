@@ -20,26 +20,26 @@
         ? Tag '<a>' juga memiliki attribute 'target', yang digunakan sebagai target window web browser, kita bisa gunakan nilai:
             - target="_self" -> halaman akan ditampilkan di halaman yang sama (default)
             - target="_blank" -> halaman akan ditampilkan di jendala web browser yang baru
-        # Tag '<a>' juga memiliki attribute 'title', untuk menuliskan judul yang keluar ketika mouse berada di atas link tersebut (hover)
+        ## Tag '<a>' juga memiliki attribute 'title', untuk menuliskan judul yang keluar ketika mouse berada di atas link tersebut (hover)
 
         No 3. Absolute URL
         ? Absolute URL merupakan alamat lengkap dari sebuah tujuan link
         ? Dalam absolute URL, kita wajib menuliskan seluruh detial domain dan halaman yang dituju, misal
             - https://github.com/siidappa
-        # Kelebihan menggunakan URL Jenis ini adalah kita bisa membuat link menuju domain yang berbeda website yang kita buat
+        ## Kelebihan menggunakan URL Jenis ini adalah kita bisa membuat link menuju domain yang berbeda website yang kita buat
 
         No 4. Relative URL
         ? Relative URL adalah lokasi 'href' dimana tetap menggunakan domain website kita (saat ini)
         ? Memiliki 2 format, bisa diawali dengan '/' atau tidak diawali dengan '/'
-            - Contoh: misal kita berada di halaman http://127.0.0.1:5500/belajar-link/index.html, lalu kita memiliki link sebagai berikut:
-            -         hello.html, itu artinya akan menuju ke http://127.0.0.1:5500/belajar-link/hello.html
+            - Contoh: misal kita berada di halaman http://127.0.0.1:5500/link/index.html, lalu kita memiliki link sebagai berikut:
+            -         hello.html, itu artinya akan menuju ke http://127.0.0.1:5500/link/hello.html
             -         /hello.html, itu artinya akan menuju ke http://127.0.0.1:5500/hello.html (recommend)
-            -         pzn/hello.html, itu artinya akan menuju ke http://127.0.0.1:5500/belajar-link/dappa/hello.html
+            -         pzn/hello.html, itu artinya akan menuju ke http://127.0.0.1:5500/link/dappa/hello.html
         
         No 5. Bookmark
         ? Bookmark adalah link yang bisa digunakan untuk menampikan HTML element dengan id tertentu
         ? Bookmark menggunakan '#' pada href, misal kita menggunakan index.html#dappa itu artinya ketika kita membuka index.html maka browser akan otomatis menampilkan posisi HTML element dengan id 'dappa'
-        # Jika kita ingin membuat link di halaman HTML itu sendiri, kita bisa langsung menggunakan '#' pada attribute 'href' nya
+        ## Jika kita ingin membuat link di halaman HTML itu sendiri, kita bisa langsung menggunakan '#' pada attribute 'href' nya
     -->
     
     <!-- $ Contoh penerapan Absolute URL -->
@@ -60,6 +60,6 @@
     <hr>
     <!-- $ Contoh Penerapan Bookmark -->
     <h1>Belajar Bookmark</h1>
-    <a href="/belajar-link/hello.html#paragraf4">Paragraf di <pre style="display: inline;">hello.html</pre></a>
+    <a href="/link/hello.html#paragraf4">Paragraf di <pre style="display: inline;">hello.html</pre></a>
 </body>
 </html>

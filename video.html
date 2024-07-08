@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+</head>
+<body>
+    <!-- 
+        No 1. Video pada HTML
+            ? Selain gambar kita juga bisa menampilkan video di HTML
+            ? Namun perlu diperhatikan, tidak semua jenis video bisa dijalankan di web browser
+            ? Biasanya format video yang banyak digunakan adalah mp4, webm / ogg
+            ! Untuk menampilkan video, kita bisa menggunakan tag '<video>'
+        
+        No 2. Video Attribute
+        > 'width' =>> untuk ukuran lebar video
+        > 'height' =>> untuk tinggi video
+        > 'controls' =>> untuk menampilkan control video
+        > 'autoplay' =>> untuk memutar video otomatis
+        ! Untuk menampilkan video, kita bisa menggunakan tag '<source>'
+    -->
+    
+    <!-- $ Cara 1 -->
+    <h2>Cara pertama menampilkan video</h2>
+    <video controls height="500px" width="720px">
+        <source src="/video/JJ in aja.mp4">
+    </video>
+
+    <!-- $ Cara 2 -->
+    <h2>Cara kedua menampilkan video</h2>
+    <video src="/video/JJ in aja.mp4" controls height="500px" width="720px"></video>
+</body>
+</html>
