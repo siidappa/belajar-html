@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <!-- 
+        No 1. table tag
+        > table =>> untuk membuat table
+        > tr =>> untuk membuat row/baris
+        > th =>> untuk membuat kolom header table
+        > td =>> untuk membuat kolom isi table
+        > caption =>> untuk menambahkan keterangan table (tidak wajibs)
+        > thead =>> untuk membuat grup header table
+        > tbody =>> untuk membuat grup isi table
+        > tfoot =>> untuk membuat grup footer table
+
+        No 2. colgroup
+        ? Kadang kita ingin memberikan style untuk kolom, jika dilakukan satu satu maka akan menyulitkan
+        ? kita bisa menggunakan tag colgroup untuk membuat gruop kolom dan tag col untuk tiap kolomnya
+        ? jika ingin menambahkan style ke lebih dari satu kolom dengan style yang sama, kita bisa gunakan attribute span=jumlah pada tag col
+
+        No 3. colspan dan rowspan
+        ? kadang kita ingin menggabungkan beberapa kolom atau beberapa baris sehingga terlihat seperti satu kolom
+        ? kita bisan menggunakan attribute colspan untuk menggabungkan kolom dalam satu baris yang sama
+        ? bisa juga menggunakan attribute rowspan untuk menggabungkan beberapa kolom di baris yang berbeda
+    -->
+
+    <!-- $ Contoh penerapan -->
+    <h2>Belajar Table</h2>
+    <table style="border: 2px solid black; text-align: center; width: 400px; height: 130px;">
+        <colgroup>
+            <col span="2" style="background-color: burlywood;">
+            <col style="background-color: yellow;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th colspan="2">Nama dan Kelas</th>
+                <th>Nilai</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Daffa</td>
+                <td>Kelas 12</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Kafka</td>
+                <td>Kelas 12</td>
+                <td>70</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td rowspan="2">Total</td>
+                <td >Nilai: </td>
+                <td>170</td>
+            </tr>
+            <tr>
+                <td>Rata-Rata:</td>
+                <td>89</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
