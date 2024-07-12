@@ -7,9 +7,6 @@
 </head>
 <body>
     <!-- 
-        : 26 Juni 2024 / 13.50 WIB
-        
-
         No 1. Link
         !! HTML memiliki fitur link (tautan), dimana kia bisa berpindah halaman dengan klik link tersebut
           ? link tidak harus berupa teks, bisa juga merupakan gambar
@@ -18,23 +15,23 @@
         ? Untuk membuat link pada HTML, kita bisa menggunakan tag/element '<a>' (anchor)
         ? Tag '<a>' memiliki attribute 'href', yang berisi lokasi tujuan dari link tersebut
         ? Tag '<a>' juga memiliki attribute 'target', yang digunakan sebagai target window web browser, kita bisa gunakan nilai:
-            - target="_self" -> halaman akan ditampilkan di halaman yang sama (default)
-            - target="_blank" -> halaman akan ditampilkan di jendala web browser yang baru
+            => target="_self" -> halaman akan ditampilkan di halaman yang sama (default)
+            => target="_blank" -> halaman akan ditampilkan di jendala web browser yang baru
         ## Tag '<a>' juga memiliki attribute 'title', untuk menuliskan judul yang keluar ketika mouse berada di atas link tersebut (hover)
 
         No 3. Absolute URL
         ? Absolute URL merupakan alamat lengkap dari sebuah tujuan link
         ? Dalam absolute URL, kita wajib menuliskan seluruh detial domain dan halaman yang dituju, misal
-            - https://github.com/siidappa
+            => https://github.com/siidappa
         ## Kelebihan menggunakan URL Jenis ini adalah kita bisa membuat link menuju domain yang berbeda website yang kita buat
 
         No 4. Relative URL
         ? Relative URL adalah lokasi 'href' dimana tetap menggunakan domain website kita (saat ini)
         ? Memiliki 2 format, bisa diawali dengan '/' atau tidak diawali dengan '/'
-            - Contoh: misal kita berada di halaman http://127.0.0.1:5500/link/index.html, lalu kita memiliki link sebagai berikut:
-            -         hello.html, itu artinya akan menuju ke http://127.0.0.1:5500/link/hello.html
-            -         /hello.html, itu artinya akan menuju ke http://127.0.0.1:5500/hello.html (recommend)
-            -         pzn/hello.html, itu artinya akan menuju ke http://127.0.0.1:5500/link/dappa/hello.html
+            => Contoh: misal kita berada di halaman http://127.0.0.1:5500/link/index.html, lalu kita memiliki link sebagai berikut:
+            =>         hello.html, itu artinya akan menuju ke http://127.0.0.1:5500/link/hello.html
+            =>         /hello.html, itu artinya akan menuju ke http://127.0.0.1:5500/hello.html (recommend)
+            =>         pzn/hello.html, itu artinya akan menuju ke http://127.0.0.1:5500/link/dappa/hello.html
         
         No 5. Bookmark
         ? Bookmark adalah link yang bisa digunakan untuk menampikan HTML element dengan id tertentu
@@ -42,7 +39,7 @@
         ## Jika kita ingin membuat link di halaman HTML itu sendiri, kita bisa langsung menggunakan '#' pada attribute 'href' nya
     -->
     
-    <!-- $ Contoh penerapan Absolute URL -->
+    <!-- # Contoh penerapan Absolute URL -->
     <h1>Belajar Link Absolute</h1>
     <ul>
         <li><a href="https://google.com" target="_blank" title="Google">Belajar Link</a></li>
@@ -50,7 +47,7 @@
         <li><a href="https://facebook.com" target="_blank" title="Facebook">Belajar Link</a></li>
     </ul>
     <hr>
-    <!-- $ Contoh Penerpan Relative URL -->
+    <!-- # Contoh Penerpan Relative URL -->
     <h1>Belajar Link Relative</h1>
     <ul>
         <li><a href="hello.html">Relative URL</a></li>
@@ -58,7 +55,7 @@
         <li><a href="/break.html">Relative URL</a></li>
     </ul>
     <hr>
-    <!-- $ Contoh Penerapan Bookmark -->
+    <!-- # Contoh Penerapan Bookmark -->
     <h1>Belajar Bookmark</h1>
     <a href="/link/hello.html#paragraf4">Paragraf di <pre style="display: inline;">hello.html</pre></a>
 </body>
